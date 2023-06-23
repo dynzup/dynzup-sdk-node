@@ -1,5 +1,0 @@
----
-"dynzup": patch
----
-
-Initial commit
