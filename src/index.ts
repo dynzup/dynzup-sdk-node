@@ -46,12 +46,11 @@ export class Dynzup {
 
     return hashedSignature === signature;
   }
-
   async constructEvent(
     payload: BodyType,
     signature: string
   ): Promise<BodyType> {
-    const dynzupKey = process.env.DYNZUP_KEY || 'dynzup-key';
+    const dynzupKey = process.env.DYNZUP_KEY || 'dynzup-';
     const isValidSignature = await this.compareSignature(
       `${dynzupKey}${this.secretKey}`,
       signature
