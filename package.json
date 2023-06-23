@@ -8,7 +8,7 @@
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts --minify --clean --sourcemap --legacy-output --out-dir dist",
     "lint": "tsc --noEmit",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "npm run lint && npm run build && changeset publish"
   },
   "keywords": [],
   "author": "",
