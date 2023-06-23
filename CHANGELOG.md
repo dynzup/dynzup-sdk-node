@@ -2,6 +2,10 @@
 
 ## 1.0.2
 
+### Minor Changes
+
+- change typescript interface
+
 ### Patch Changes
 
 - baa5b40: fix return of contructor event
